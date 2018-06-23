@@ -1,0 +1,33 @@
+@import "~normalize.css"
+@import "color.styl"
+@import "article.styl"
+@import "post-preview.styl"
+@import "~prismjs/themes/prism-solarizedlight.css"
+@import "footer.styl"
+html
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", "Noto Sans", "Noto Sans CJK JP", sans-serif
+  background: $white
+*
+  box-sizing: border-box
+a
+  color: $blue
+  text-decoration: none
+
+.container
+  padding: 2em 0
+  width: 800px
+  margin: 0 auto
+
+.site-title
+  color: $purple
+  font-weight: 100
+  font-size: 32px
+.posts
+  display: grid
+  grid-template-columns: repeat(3, 30%)
+  grid-template-rows: auto
+  grid-column-gap: 2em
+  grid-row-gap: 2em
+  width: 100%
+
